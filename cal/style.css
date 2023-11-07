@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Roboto:wght@400;500&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./bg.jpg");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.cal {
+  height: 80vh;
+  width: 30vw;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.display {
+  height: 25%;
+  width: 100%;
+  backdrop-filter: blur(15px) saturate(200%);
+  -webkit-backdrop-filter: blur(15px) saturate(200%);
+  background-color: rgba(65, 73, 82, 0.65);
+}
+
+.btnContainer {
+  height: 75%;
+  width: 100%;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 4px;
+  backdrop-filter: blur(20px) saturate(200%);
+  -webkit-backdrop-filter: blur(20px) saturate(200%);
+  background-color: rgba(27, 39, 49, 0.75);
+}
+
+.btn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(2, 14, 39, 0.3);
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  animation-timing-function: ease-in;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  transition-duration: 150ms;
+  animation-duration: 150ms;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  backdrop-filter: blur(5px) saturate(100%);
+  -webkit-backdrop-filter: blur(5px) saturate(100%);
+  z-index: 10;
+}
+
+.btn.equal {
+  grid-row-start: span 2;
+  grid-column-start: 4;
+}
+
+.btn.zero {
+  grid-column-start: span 2;
+  grid-row-start: 5;
+}
