@@ -16,8 +16,8 @@ function result() {
   }
 }*/
 
-let $operation = document.getElementById("operation");
-let $results = document.getElementById("results");
+const $operation = document.getElementById("operation");
+const $results = document.getElementById("results");
 let isOperatorAdded = false;
 const symbols = ["+", "-", "×", "÷"];
 
