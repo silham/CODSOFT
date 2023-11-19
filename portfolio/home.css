@@ -500,15 +500,25 @@ header {
   padding: 10px 0 7px;
 }
 
-.feedback {
+.contact {
   background: var(--light);
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 50px;
 }
-.feedback iframe {
-  height: 80vh;
-  width: 100vw;
-  border: none;
+
+.contact .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
 }
-.feedback h2 {
+
+.contact .content .basic h3 {
+  margin-bottom: 15px;
+}
+
+.contact h2 {
   text-align: center;
   position: relative;
   font-size: 36px;
@@ -516,7 +526,7 @@ header {
   padding-bottom: 10px;
   padding-top: 30px;
 }
-.feedback h2::after {
+.contact h2::after {
   content: "";
   position: absolute;
   width: 120px;
